@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container" >
+  <view  class="message-list" >
+    <scroll-view class="scroll" scroll-y="true" scroll-top="{{scrollTop}}">
+        <text>{{messages}}</text>
+      </scroll-view>
+  </view>
+  <view class="input-view">
+    <input type="text" class="content-input" auto-focus bindinput="typeMessageEvent" value="{{currentMsg}}"/>
+    <button type="primary" class="send-btn" bindtap="sendMsg">Pub</button>
+  </view>
+  <view class="topic-input">
+    <input type="text" class="content-input1" auto-focus bindinput="typeSubTopic" value="{{subTopic}}"/>
+    <button type="primary" class="send-btn1" bindtap="Subscribe">Sub</button>
+  </view>
+</view>
